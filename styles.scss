@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+
+.master-container {
+  //   font-family: "Exo", sans-serif;
+  //   font-size: 1.1rem;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+
+  //   font-family: "Dosis", sans-serif;
+  //   font-size: 1.25rem;
+
+  .menu {
+    a {
+      padding: 0 15px;
+      color: #f8f9fa;
+    }
+  }
+  .timeline {
+    .header-container {
+      .filter-option {
+        background-color: transparent;
+        border: 0;
+        color: #6c757d;
+        padding: 0 15px;
+      }
+
+      .filter-option.active {
+        color: #f8f9fa;
+      }
+      .button:focus {
+        border: none;
+      }
+      .divider {
+        height: 30px;
+        width: 1px;
+        background-color: #f8f9fa;
+      }
+    }
+    .timeline-list {
+      a {
+      }
+      .location {
+      }
+    }
+  }
+  .projects {
+    .card {
+      .card-body {
+        color: black;
+      }
+    }
+  }
+}

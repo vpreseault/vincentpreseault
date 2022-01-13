@@ -14,86 +14,148 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Vincent Préseault</title>
   </head>
 
   <body class="bg-dark text-light">
     <div class="master-container row justify-content-center">
-      <div class="col-12 col-sm-10">
+      <div class="col-12 col-md-8">
         <div class="personal-info text-center">
           <div class="profile-pic bg-primary rounded-circle"></div>
           <h1 class="name">Vincent Préseault</h1>
           <p class="studies">
             Electronics Engineering Technology at Collège Boréal
           </p>
-          <p class="interests"></p>
+          <p class="interests">
+            &#128187; Software Engineer &#128218; Book lover &#128126; Gamer
+          </p>
           <div class="links"></div>
         </div>
-        <div class="menu d-flex justify-content-around">
-          <a href="#general-info">Biography</a>
-          <a href="#timeline">Timeline</a>
-          <a href="#projects">Projects</a>
+        <div class="menu row justify-content-center text-center py-5">
+          <a class="col-4" href="#general-info">Biography</a>
+          <a class="col-4" href="#timeline">Timeline</a>
+          <a class="col-4" href="#projects">Projects</a>
         </div>
+
         <div class="general-info" id="general-info">
           <h2 class="subtitle">Biography</h2>
           <p>
-            Hey! My name is Vincent Préseault, I'm currently in my first year of
-            Electronics Engineering Technology at Collège Boréal. I'm looking to
-            do the 3 year program with specialization in instrumentation and
-            electronics.
+            &#128075; Hey! My name is Vincent Préseault, I'm currently in my
+            first year of Electronics Engineering Technology at Collège Boréal.
+            I'm looking to do the 3 year program with specialization in
+            instrumentation and electronics.
           </p>
           <p>
-            Before this, I studied Software Engineering at the University of
-            Ottawa. I only ended up staying there for one year before deciding
-            to explore a different passion. My current goal is to gain practical
-            experience in the electrical field while still working on software
-            projects.
+            &#127794; Growing up in northern Ontario, I quickly got into hunting
+            and fishing. I also love to go car camping on the weekend taking
+            advantage of all the hiking trails in the area. The summer is one of
+            my most active times in the year with all my adventures, the fall is
+            for hunting and winter is for snowboarding.
           </p>
+          <p>
+            &#128187; Prior to my time at Boréal, I studied Software Engineering
+            at the University of Ottawa. I only ended up staying there for one
+            year before deciding to explore a different passion. My current goal
+            is to gain practical experience in the electrical field while still
+            working on software projects.
+          </p>
+          <p>
+            &#128218; I discorvered my love for book during my time in Ottawa.
+            Living alone in the full force of the pandemic, I found new ways to
+            keep me busy. The only exposure I had to reading before this was
+            high school mandatory reading and I didn't enjoy it much. Now that I
+            get to pick my own books, mainly sci-fi and fantasy, I've grown to
+            love it.
+          </p>
+          <p>gardening rubiks outdoors man car camp tea</p>
         </div>
         <div class="timeline" id="timeline">
-          <div class="header-container d-flex">
+          <div class="header-container d-flex align-items-baseline">
             <h3 class="subtitle">Timeline</h3>
-            <button class="filter-option">All</button>
-            <button class="filter-option">Work</button>
-            <button class="filter-option">School</button>
+            <div class="row align-items-center pl-4">
+              <button
+                onclick="filter(this, 'all')"
+                class="filter-option active"
+              >
+                All
+              </button>
+              <div class="divider"></div>
+              <button onclick="filter(this, 'work')" class="filter-option">
+                Work
+              </button>
+              <div class="divider"></div>
+              <button onclick="filter(this, 'co-op')" class="filter-option">
+                Co-op
+              </button>
+              <div class="divider"></div>
+              <button onclick="filter(this, 'school')" class="filter-option">
+                School
+              </button>
+            </div>
           </div>
           <ul class="timeline-list">
-            <li>
-              September 2021 to now - CFORP, Otawa ON (Remote) - Web Developper
+            <li id="work">
+              September 2021 to now -
+              <span class="location"
+                ><a href="" target="_blank">CFORP</a>, Ottawa ON (Remote)</span
+              >
+              - Web Developper
             </li>
-            <li>
+            <li id="school">
               September 2021 to now - Collège Boréal, Sudbury ON - Electronics
               Engineering Technology
             </li>
-            <li>
-              Mai 2021 to September 2021 - CFORP, Otawa ON (Remote) - Web
+            <li id="co-op">
+              Mai 2021 to September 2021 - CFORP, Ottawa ON (Remote) - Web
               Developper Intern
             </li>
-            <li>
-              September 2020 to Mai 2021 - University of Ottawa, Otawa ON -
+            <li id="school">
+              September 2020 to Mai 2021 - University of Ottawa, Ottawa ON -
               BASc, Software Engineering
             </li>
-            <li>
-              September 2019 to September 2020 - Science North, Sudbury ON -
-              Science Demonstrator
+            <li id="work">
+              June 2019 to August 2020 - Science North, Sudbury ON - Science
+              Demonstrator
             </li>
-            <li>
-              September 2018 to September 2020 - Science North, Sudbury ON -
-              Science Demonstrator
+            <li id="co-op">
+              September 2018 to June 2019 - Science North, Sudbury ON - Science
+              Demonstrator Co-op
             </li>
-            <li>
-              September 2021 to now - CFORP, Otawa ON (Remote) - Web Developper
+            <li id="school">
+              September 2016 to June 2020 - Collège Notre-Dame, Sudbury ON -
+              High School Diploma
             </li>
           </ul>
         </div>
-        <div class="projects" id="projects">
-          <div class="elevated-dreams">
+        <h4>Projects</h4>
+        <div class="projects row" id="projects">
+          <div class="card elevated-dreams col-6 col-lg-3">
+            <img class="card-img-top img-fluid" src="/elevated-dreams.PNG"
+            alt="Picture of the Elevated Dreams home page."">
+            <div class="card-body">
+              <p class="project-title">Elevated Dreams</p>
+              <p class="project-description">Website for SEG2900 project</p>
+            </div>
+          </div>
+
+          <div class="card col-6 col-lg-3">
+            <img class="card-img-top img-fluid" src="/elevated-dreams.PNG"
+            alt="Picture of the Elevated Dreams home page."">
+            <div class="card-body">
+              <h5 class="project-title">Elevated Dreams</h5>
+              <p class="project-description">Website for SEG2900 project</p>
+            </div>
+          </div>
+
+          <div class="">
             <p class="project-title">Elevated Dreams</p>
             <p class="project-description">Website for SEG2900 project</p>
             <img
               src="/elevated-dreams.PNG"
               alt="Picture of the Elevated Dreams home page."
             />
+            https://elevated-dreams.github.io/
           </div>
         </div>
       </div>
@@ -116,5 +178,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
