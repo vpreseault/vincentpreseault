@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+.dark-mode {
+  background-color: #121212;
+  color: #ffffffde;
+}
+
+.dark-mode a:hover {
+  color: #007bff;
+}
+
 .master-container {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
@@ -8,18 +17,18 @@
 
 .master-container .menu a {
   padding: 0 15px;
-  color: #f8f9fa;
+  color: #ffffffde;
 }
 
 .master-container .timeline .header-container .filter-option {
   background-color: transparent;
   border: 0;
-  color: #6c757d;
+  color: #ffffff61;
   padding: 0 15px;
 }
 
 .master-container .timeline .header-container .filter-option.active {
-  color: #f8f9fa;
+  color: #ffffffde;
 }
 
 .master-container .timeline .header-container .button:focus {
@@ -29,7 +38,15 @@
 .master-container .timeline .header-container .divider {
   height: 30px;
   width: 1px;
-  background-color: #f8f9fa;
+  background-color: #ffffffde;
+}
+
+.master-container .timeline .timeline-list {
+  color: #ffffff;
+}
+
+.master-container .timeline .timeline-list .location {
+  color: #ffffff99;
 }
 
 .master-container .projects .card .card-body {
