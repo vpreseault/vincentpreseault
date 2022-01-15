@@ -51,7 +51,69 @@
   color: #ffffff99;
 }
 
-.master-container .projects .card .card-body {
-  color: black;
+.master-container .projects .elevated-dreams {
+  background-image: url("/elevated-dreams.PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  position: relative;
+  /* desired width */
+}
+
+.master-container .projects .elevated-dreams:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* initial ratio of 1:1*/
+}
+
+.master-container .projects .elevated-dreams:hover .content {
+  opacity: 1;
+}
+
+.master-container .projects a:focus + .content {
+  opacity: 1;
+}
+
+.master-container .projects .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  opacity: 0;
+  background: #333;
+  color: #ffffffde;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+  border-radius: 13px;
+  /*   display: flex;
+      align-items: center; */
+  height: 100%;
+  text-align: center;
+}
+
+.master-container .projects .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.master-container .projects .project-title {
+  font-size: 1.5rem;
+}
+
+.master-container .projects .project-description {
+  font-size: 1rem;
+}
+
+.master-container .projects a {
+  background-color: #5555ff;
+  color: #ffffffde;
+  border-radius: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
