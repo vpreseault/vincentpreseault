@@ -33,12 +33,18 @@
           <div class="links"></div>
         </header>
         <nav class="menu row justify-content-center text-center py-5">
-          <a class="col-4" href="#general-info">Biography</a>
-          <a class="col-4" href="#timeline">Timeline</a>
-          <a class="col-4" href="#projects">Projects</a>
+          <button class="col-4 nav-filter" onclick="navFilter('biography')">
+            Biography
+          </button>
+          <button class="col-4 nav-filter" onclick="navFilter('timeline')">
+            Timeline
+          </button>
+          <button class="col-4 nav-filter" onclick="navFilter('projects')">
+            Projects
+          </button>
         </nav>
         <main>
-          <div class="general-info" id="general-info">
+          <section class="biography" id="biography">
             <h2 class="subtitle">Biography</h2>
             <p>
               &#128075; Hey! My name is Vincent Préseault, I'm currently in my
@@ -69,27 +75,36 @@
               fantasy, I've grown to love it.
             </p>
             <!-- <p>gardening rubiks outdoors man car camp tea</p> -->
-          </div>
-          <div class="timeline" id="timeline">
+          </section>
+          <section class="timeline" id="timeline">
             <div class="header-container d-flex align-items-baseline">
               <h3 class="subtitle">Timeline</h3>
               <div class="d-flex align-items-center pl-sm-3">
                 <button
-                  onclick="filter(this, 'all')"
+                  onclick="timelineFilter(this, 'all')"
                   class="filter-option active"
                 >
                   All
                 </button>
                 <div class="divider"></div>
-                <button onclick="filter(this, 'work')" class="filter-option">
+                <button
+                  onclick="timelineFilter(this, 'work')"
+                  class="filter-option"
+                >
                   Work
                 </button>
                 <div class="divider"></div>
-                <button onclick="filter(this, 'co-op')" class="filter-option">
+                <button
+                  onclick="timelineFilter(this, 'co-op')"
+                  class="filter-option"
+                >
                   Co-op
                 </button>
                 <div class="divider"></div>
-                <button onclick="filter(this, 'school')" class="filter-option">
+                <button
+                  onclick="timelineFilter(this, 'school')"
+                  class="filter-option"
+                >
                   School
                 </button>
               </div>
@@ -170,8 +185,8 @@
                 - High School Diploma
               </li>
             </ul>
-          </div>
-          <div class="projects" id="projects">
+          </section>
+          <section class="projects" id="projects">
             <h4>Projects</h4>
             <div class="projects-list row">
               <div class="card elevated-dreams col-6 col-lg-6">
@@ -201,7 +216,7 @@
                 https://elevated-dreams.github.io/
               </div> -->
             </div>
-          </div>
+          </section>
         </main>
       </div>
     </div>

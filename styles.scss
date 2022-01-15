@@ -30,17 +30,19 @@ $links: #5555ff;
   //   font-family: "Dosis", sans-serif;
   //   font-size: 1.25rem;
 
+  button {
+    background-color: transparent;
+    border: 0;
+  }
+
   .menu {
-    a {
-      padding: 0 15px;
+    button {
       color: $white;
     }
   }
   .timeline {
     .header-container {
       .filter-option {
-        background-color: transparent;
-        border: 0;
         color: $disabled;
         padding: 0 15px;
       }

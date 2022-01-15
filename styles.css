@@ -15,14 +15,16 @@
   font-size: 1.2rem;
 }
 
-.master-container .menu a {
-  padding: 0 15px;
+.master-container button {
+  background-color: transparent;
+  border: 0;
+}
+
+.master-container .menu button {
   color: #ffffffde;
 }
 
 .master-container .timeline .header-container .filter-option {
-  background-color: transparent;
-  border: 0;
   color: #ffffff61;
   padding: 0 15px;
 }
