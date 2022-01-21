@@ -20,13 +20,23 @@
   border: 0;
 }
 
+.master-container .personal-info .links .link-button-wrapper {
+  padding: 5px 15px;
+  border-radius: 50px;
+  background-color: #5555ff;
+}
+
+.master-container .personal-info .links .link-button-wrapper .link-button {
+  color: #ffffffde;
+}
+
 .master-container .menu button {
   color: #ffffffde;
 }
 
 .master-container .timeline .header-container .filter-option {
   color: #ffffff61;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .master-container .timeline .header-container .filter-option.active {

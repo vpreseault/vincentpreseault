@@ -34,7 +34,18 @@ $links: #5555ff;
     background-color: transparent;
     border: 0;
   }
-
+  .personal-info {
+    .links {
+      .link-button-wrapper {
+        padding: 5px 15px;
+        border-radius: 50px;
+        background-color: $links;
+        .link-button {
+          color: $white;
+        }
+      }
+    }
+  }
   .menu {
     button {
       color: $white;
@@ -44,7 +55,7 @@ $links: #5555ff;
     .header-container {
       .filter-option {
         color: $disabled;
-        padding: 0 15px;
+        padding: 0 10px;
       }
 
       .filter-option.active {
