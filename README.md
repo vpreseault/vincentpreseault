@@ -1,3 +1,3 @@
 # vincentpreseault
 
-[https://vpreseault.github.io/vincentpreseault/]
+https://vpreseault.github.io/vincentpreseault/
